@@ -1,10 +1,17 @@
 public class Leapyear {
     public static void main(String[]args){
-        int year = 2024;
-        if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-            System.out.println("Leap year");
-        else
-            System.out.println("Not a leap year");
+     boolean isprime = false;
+        for(int i = 3; i <= 100; i++){
+            for(int j = 2; j <= i-1; j++ ){
+                if( i % j == 0){
+        isprime = true;
+                }
+            }
+                if(!isprime){
+                    System.out.println(i+ " is  a prime no");
+                }
+isprime = false;
+        }
     }
-    
 }
+

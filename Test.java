@@ -1,12 +1,18 @@
-public class Test {
-    public static void main(String[] args){
-        int sum = 0;
-        for(int i = 1; i <= 10; i++){
-            sum = sum + i;
-            // System.out.println( "sum = "+sum);
+public class Test{
+    public static void main(String[]args){
+        int year = 200;
+        if( year % 4 == 0){
+            System.out.println(year +" is a leap year");
         }
-        System.out.println( "number = "+sum);
+        else if(year % 100 == 0){
+            System.out.println(year + " is not a leap year");
+        }
+        else if(year % 400== 0){
+            System.out.println(year + " is a leap year");
+        }
+        else{
+            System.out.println(year + " is not a leap year");
+        }
     }
-    }
-    
+}
 
